@@ -47,17 +47,13 @@ class Bike:
         print(f'Sold: {self.__sold}')
 
 
-# Create a Bike object with the same data as the original program.
-bike1 = Bike('Univega Alpina, orange', cost=100, sale_price=500, condition=0.5)
+def demo():
+    bike1 = Bike('Univega Alpina, orange', cost=100, sale_price=500, condition=0.5)
+    bike1.update_sale_price(350)
+    bike1.sell()
+    bike1.display_details()
+    bike1.update_sale_price(300)
 
-# Update the price before selling the bike.
-bike1.update_sale_price(350)
 
-# Sell the bike.
-bike1.sell()
-
-# Display the final state of the bike.
-bike1.display_details()
-
-# Updating the price after selling is not allowed.
-bike1.update_sale_price(300)
+if __name__ == "__main__":
+    demo()

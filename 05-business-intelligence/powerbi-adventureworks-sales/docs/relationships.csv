@@ -1,0 +1,8 @@
+FromTable,FromColumn,ToTable,ToColumn,Cardinality,CrossFilter,Active
+DimCalendar,Date,FactSales,OrderDate,One-to-Many,Single,Yes
+DimCalendar,Date,FactReturns,ReturnDate,One-to-Many,Single,Yes
+DimCustomers,CustomerKey,FactSales,CustomerKey,One-to-Many,Single,Yes
+DimProducts,ProductKey,FactSales,ProductKey,One-to-Many,Single,Yes
+DimProducts,ProductKey,FactReturns,ProductKey,One-to-Many,Single,Yes
+DimTerritories,SalesTerritoryKey,FactSales,TerritoryKey,One-to-Many,Single,Yes
+DimTerritories,SalesTerritoryKey,FactReturns,TerritoryKey,One-to-Many,Single,Yes

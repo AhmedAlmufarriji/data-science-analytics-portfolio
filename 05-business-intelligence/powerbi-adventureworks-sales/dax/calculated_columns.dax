@@ -1,0 +1,7 @@
+-- Add each column individually through Power BI > Modeling > New column.
+Line Revenue =
+FactSales[OrderQuantity] * RELATED(DimProducts[ProductPrice])
+
+Gross Profit =
+FactSales[OrderQuantity] *
+    (RELATED(DimProducts[ProductPrice]) - RELATED(DimProducts[ProductCost]))

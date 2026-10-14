@@ -1,0 +1,15 @@
+-- Add each DAX measure individually; do not paste the whole file into one measure.
+Total Sales = SUMX(FactSales, FactSales[OrderQuantity] * RELATED(DimProducts[ProductPrice]))
+Total Orders = DISTINCTCOUNT(FactSales[OrderNumber])
+Average Sales = DIVIDE([Total Sales], [Total Orders], 0)
+Total Units = SUM(FactSales[OrderQuantity])
+Total Cost = SUMX(FactSales, FactSales[OrderQuantity] * RELATED(DimProducts[ProductCost]))
+Total Gross Profit = SUM(FactSales[Gross Profit])
+-- Gross Margin references the actual defined total-gross-profit measure.
+Gross Margin % = DIVIDE([Total Gross Profit], [Total Sales], 0)
+Total Returned Units = SUM(FactReturns[ReturnQuantity])
+Return Units % = DIVIDE([Total Returned Units], [Total Units], 0)
+
+Sales Bar Color =
+VAR SelectedCategoryAverage = AVERAGEX(ALLSELECTED(DimProducts[CategoryName]), [Total Sales])
+RETURN IF([Total Sales] < SelectedCategoryAverage, "#E76F65", "#157F75")
