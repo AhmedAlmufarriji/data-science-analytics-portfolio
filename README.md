@@ -56,6 +56,8 @@ For individual Python projects, install their local `requirements.txt` and run t
 **Data systems:** SQL, schema design, stored procedures, MongoDB modeling.  
 **Business intelligence:** Power Query, DAX, analytical data modeling and dashboard concepts.
 
+[Explore architecture diagrams for the BI and SQL projects](docs/ARCHITECTURE.md)
+
 ## Quality and provenance
 
 - [Automated Python tests](tests/test_portfolio.py) run through [GitHub Actions](.github/workflows/python-checks.yml).
