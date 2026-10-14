@@ -1,7 +1,21 @@
-# Retail Sales and Satisfaction
+# Retail Sales & Customer Satisfaction
 
-Revenue, gross profit, feedback and customer satisfaction analysis.
+An educational retail BI case study combining transactional sales data and customer feedback.
 
-**Tools:** Power BI, DAX, Power Query M
+**Stack:** Power BI Desktop, DAX, Power Query
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Measures and questions
+
+Calculate total revenue, gross profit, unique customers, satisfaction metrics, invoice counts, profit margin and rating classes. Analyze patterns across product category, region and customer type.
+
+**What is published:** DAX measures and column definitions, plus model notes. **Not published:** source customer-level tables or a native `.pbix` report.
+
+Key Influencers patterns are associations, not demonstrated causal effects. Revenue and gross profit come from the sample dataset and should not be treated as audited company results.
+
+## How to get started
+
+```bash
+Open Power BI Desktop; import your authorized course data and create DAX calculations from dax/measures_and_columns.txt
+```
+
+[View DAX definitions](dax/measures_and_columns.txt)

@@ -1,14 +1,35 @@
 # Ahmed Almufarriji — Data Science & Analytics Portfolio
 
-Welcome! I'm a Data Science graduate interested in analytics, machine learning, data engineering, SQL, Python, and business intelligence. This repository collects **educational and hands-on projects** into a structured, reproducible portfolio.
+[![Python checks](https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio/actions/workflows/python-checks.yml/badge.svg)](https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio/actions/workflows/python-checks.yml)
 
-> These are practice/course projects and prototypes. They are not claimed as commercial production deployments.
+**Data Science graduate | Python • Machine Learning • SQL • Data Visualization • Power BI**
 
-## Featured project already on GitHub
+A curated collection of educational projects: hands-on source code, reproducible notebooks, database designs, and business intelligence examples. See my [separate time-series forecasting capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone).
 
-- [Time Series Forecasting Capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone) — a separate public repository with an end-to-end notebook and documentation.
+> **Scope:** Educational assignments and prototypes; not production software or claims of professional client deployment. Raw customer-level sales exports have not been published.
 
-## Project directory
+## Start here — selected projects
+
+| Project | What you can verify |
+|---|---|
+| [Medical Insurance Cost Prediction](01-machine-learning/medical-insurance-linear-regression) | 70/30 train-test split, regression evaluation and an executable notebook |
+| [Restaurant Tips EDA](02-data-analysis/eda-tips-analysis) | Six charts with univariate, bivariate and multivariate analysis |
+| [AdventureWorks Sales Model](05-business-intelligence/powerbi-adventureworks-sales) | Star-schema relationships, Power Query transformations and DAX measures |
+| [SQL Electronic Library](04-databases/mysql-electronic-library) | SQL design, foreign keys and borrowing/return procedures |
+| [Retail Satisfaction Analysis](05-business-intelligence/powerbi-store-satisfaction) | DAX revenue/profit/customer metrics and data-model documentation |
+
+## Run and verify
+
+```bash
+git clone https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio.git
+cd data-science-analytics-portfolio
+python -m pip install -r requirements-dev.txt
+python -m pytest tests -q
+```
+
+For individual Python projects, install their local `requirements.txt` and run the source file or open the included `.ipynb` notebook. SQL and MongoDB projects need their respective database engines. Power BI examples provide reconstruction materials, **not native `.pbix` files**.
+
+## Project index
 
 | Project | Technologies | Focus |
 |---|---|---|
@@ -27,17 +48,19 @@ Welcome! I'm a Data Science graduate interested in analytics, machine learning, 
 | [AdventureWorks Sales Analytics (Power BI Companion)](05-business-intelligence/powerbi-adventureworks-sales) | Power BI, Power Query M, DAX, Python, HTML | Data modeling, ETL transformations, DAX KPIs, visualizations and an HTML dashboard for the supplied educational sales dataset. |
 | [Retail Sales and Customer Satisfaction Analytics](05-business-intelligence/powerbi-store-satisfaction) | Power BI, DAX, Power Query M, HTML | Model invoices, customers, products and feedback; analyze revenue, gross profit, satisfaction and potential drivers. |
 
-## Areas of interest
 
-- **Data science & ML:** exploratory analysis, prediction, model evaluation, time series.
-- **Python:** Pandas, NumPy, object-oriented programming, applied scripting.
-- **Databases:** MySQL schema design, foreign keys, stored procedures, MongoDB.
-- **Business intelligence:** Power Query, DAX, data models, interactive analytical reports.
+## Technical coverage
 
-## Reproducibility and data
+**Python:** NumPy, pandas, OOP, validation, date processing.  
+**Analytics and ML:** EDA, visualization, scikit-learn regression and evaluation.  
+**Data systems:** SQL, schema design, stored procedures, MongoDB modeling.  
+**Business intelligence:** Power Query, DAX, analytical data modeling and dashboard concepts.
 
-Each project includes a README with execution instructions and limitations. Some dashboards are standalone HTML companions to Power BI rather than native PBIX projects. Large and customer-level data exports are excluded from this public portfolio pending data-sharing review; use the original local training datasets when reconstructing reports.
+## Quality and provenance
 
-## Connect
+- [Automated Python tests](tests/test_portfolio.py) run through [GitHub Actions](.github/workflows/python-checks.yml).
+- [Dataset and privacy guidance](DATA_SHARING.md) explains why customer-level source exports are omitted.
+- Some interactive HTML dashboards were developed separately from Power BI; they should not be presented as PBIX exports.
+- The learning projects use demonstration data and do not constitute production system certifications.
 
-- [GitHub profile](https://github.com/AhmedAlmufarriji)
+[My GitHub profile](https://github.com/AhmedAlmufarriji)

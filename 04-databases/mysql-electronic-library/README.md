@@ -1,7 +1,19 @@
-# Electronic Library Management
+# Electronic Library Management Database
 
-ER modeling, books, authors, members, loans, indexes and borrowing/returns.
+Relational schema for authors, books, members and lending/return transactions.
 
-**Tools:** MySQL, SQL
+**Stack:** MySQL 8+, SQL
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Database design
+
+Requirements analysis, conceptual ER model, logical primary/foreign keys and physical indexes. Demonstrates book availability and SQL operations for borrowing and returning books.
+
+**Caution:** The stored procedures and sample data are for a learning exercise; production circulation systems require authentication, recovery, concurrency validation and richer audit trails.
+
+## How to get started
+
+```bash
+mysql -u USER -p < sql/library_management.sql
+```
+
+Use an isolated local MySQL database for demonstration and review.

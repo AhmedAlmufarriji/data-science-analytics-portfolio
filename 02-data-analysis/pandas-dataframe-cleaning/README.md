@@ -1,7 +1,20 @@
-# Pandas DataFrames and Data Cleaning
+# Pandas DataFrames and Missing Values
 
-Create, inspect, type-convert and clean course data.
+Construct and clean a 15-row, three-column course catalog DataFrame.
 
-**Tools:** Python, pandas
+**Stack:** Python, pandas, NumPy
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Exercise
+
+Build a DataFrame from course-level data, inspect `describe(include='all')`, cast Level to float64, inspect four rows with `head(4)` and remove incomplete records with `dropna()`.
+
+The first nine rows are from the assignment. Six additional **synthetic** course records were inserted to meet its 15-row requirement. This is a demonstration of basic cleaning, not a sourced institutional dataset.
+
+## How to get started
+
+```bash
+python -m pip install -r requirements.txt
+python src/pandas_project.py
+```
+
+[Open notebook](notebooks/pandas_project.ipynb)

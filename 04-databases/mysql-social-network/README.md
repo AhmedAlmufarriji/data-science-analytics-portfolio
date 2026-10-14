@@ -1,7 +1,19 @@
 # Social Network Database Simulation
 
-Users, profiles, followers, tweets, likes, foreign keys and procedures.
+A MySQL schema for user accounts, profiles, posts, follows and likes.
 
-**Tools:** MySQL, SQL
+**Stack:** MySQL 8+, SQL
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Design
+
+Uses primary and foreign keys to manage account/profile records, follower relationships, tweets and likes. Includes `createAccount` and `User_Follow` demonstration procedures and test inserts.
+
+**Security caveat:** Password hashing inside a SQL demonstration (including SHA2 where used) is not production password management. Use a modern password hashing mechanism such as Argon2id in the application layer for real systems.
+
+## How to get started
+
+```bash
+mysql -u USER -p < sql/social_network.sql
+```
+
+Runs with a local test database; inspect tables and routines after execution.

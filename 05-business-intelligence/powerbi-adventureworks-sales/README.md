@@ -1,7 +1,24 @@
-# AdventureWorks Sales Analytics
+# AdventureWorks Sales & Profit Analysis
 
-Data modeling, measures, sales KPIs and web dashboard companion.
+A Power BI training data model and associated Power Query / DAX implementation files.
 
-**Tools:** Power BI, DAX, Power Query M
+**Stack:** Power BI Desktop, DAX, Power Query M
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Model and measures
+
+- Dimension tables for calendar, customers, products and sales territories; fact tables for sales and returns.
+- Calculated sales revenue and gross profit, order counts, margin, return rates and conditional bar colors.
+- The gross-margin calculation has been corrected to reference the defined `[Total Gross Profit]` measure.
+
+**What is published:** DAX, a sample Power Query M file, relationship specifications and a [reconstruction guide](docs/implementation.md).  
+**What is not published:** customer-level raw CSV exports and any native Power BI `.pbix` file.
+
+Any HTML visualization created during the exercise is a separate prototype and should not be represented as a Power BI export.
+
+## How to get started
+
+```bash
+Open Power BI Desktop and follow docs/implementation.md
+```
+
+[DAX measures](dax/measures.dax) · [Relationships](docs/relationships.csv)

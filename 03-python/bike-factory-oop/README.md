@@ -1,7 +1,19 @@
-# Bike Factory OOP
+# Bike Inventory Object (OOP)
 
-Refactor a procedural bike inventory example using a class and encapsulation.
+Rewrite a procedural bike record as an object with protected internal state and behavior.
 
-**Tools:** Python
+**Stack:** Python standard library
 
-This is an educational portfolio project. See the included source file for implementation details. For SQL use MySQL 8+; for MongoDB use mongosh; for Python install the project libraries and run with Python 3. This is not a production deployment.
+## Features
+
+`Bike` encapsulates description, cost, sale price, condition and sold status. A price can be updated before sale and cannot be changed after sale. Source code defines `demo()` and can be safely imported without running it.
+
+An introductory course demonstration; persistence, authorization and financial controls are outside its scope.
+
+## How to get started
+
+```bash
+python src/bike_oop.py
+```
+
+See [smoke tests](../../tests/test_portfolio.py).
