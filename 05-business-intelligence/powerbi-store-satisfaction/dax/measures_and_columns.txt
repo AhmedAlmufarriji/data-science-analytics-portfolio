@@ -1,0 +1,116 @@
+POWER BI - STORE SALES & CUSTOMER SATISFACTION
+================================================
+Create calculated columns below in the FactSales table (Modeling > New column).
+Add them ONE AT A TIME. Do not paste the whole file into a single DAX formula.
+
+-- Revenue per invoice line
+Revenue =
+    'FactSales'[Quantity] * 'FactSales'[Unit Price]
+
+-- Cost per invoice line from related DimProducts (many-to-one relationship required)
+Cost Of Goods =
+    'FactSales'[Quantity] * RELATED('DimProducts'[Cost])
+
+-- Gross profit; does not include shipping, tax, salaries, overheads, or refunds
+Profit =
+    'FactSales'[Revenue] - 'FactSales'[Cost Of Goods]
+
+-- Ratings for each invoice: service and quality weighted equally
+Average Rating =
+    DIVIDE(
+        'FactSales'[Service Rating] + 'FactSales'[Product Quality Rating],
+        2
+    )
+
+-- High >= 4.0, Medium >= 2.5 and < 4.0, Low < 2.5
+Rating Category =
+    SWITCH(
+        TRUE(),
+        'FactSales'[Average Rating] >= 4, "High",
+        'FactSales'[Average Rating] >= 2.5, "Medium",
+        "Low"
+    )
+
+Month Name =
+    FORMAT('FactSales'[Invoice Date], "MMMM", "en-US")
+
+Month Number =
+    MONTH('FactSales'[Invoice Date])
+
+-- Optional classification for Key Influencers, selecting value = "High"
+High Rating Flag =
+    IF('FactSales'[Average Rating] >= 4, "High", "Not High")
+
+-- Optional: color codes for revenue comparison using current visual context
+
+Create the following as MEASURES (Modeling > New measure):
+
+Total Revenue =
+    SUM('FactSales'[Revenue])
+
+Total Profit =
+    SUM('FactSales'[Profit])
+
+Unique Customers =
+    DISTINCTCOUNT('FactSales'[Customer ID])
+
+Invoice Count =
+    DISTINCTCOUNT('FactSales'[Invoice ID])
+
+Total Units =
+    SUM('FactSales'[Quantity])
+
+Average Satisfaction =
+    AVERAGE('FactSales'[Average Rating])
+
+Average Service Rating =
+    AVERAGE('FactSales'[Service Rating])
+
+Average Quality Rating =
+    AVERAGE('FactSales'[Product Quality Rating])
+
+Profit Margin % =
+    DIVIDE([Total Profit], [Total Revenue], 0)
+
+Average Revenue Per Invoice =
+    DIVIDE([Total Revenue], [Invoice Count], 0)
+
+High Rating Invoices =
+    CALCULATE([Invoice Count], 'FactSales'[Rating Category] = "High")
+
+High Rating Rate % =
+    DIVIDE([High Rating Invoices], [Invoice Count], 0)
+
+-- Visual bar color: below group average in red; otherwise dark teal
+Revenue Bar Color =
+    VAR benchmark =
+        CALCULATE([Total Revenue], ALLSELECTED('DimProducts'[Category]))
+    VAR categoryCount =
+        COUNTROWS(ALLSELECTED('DimProducts'[Category]))
+    VAR threshold = DIVIDE(benchmark, categoryCount, 0)
+    RETURN IF([Total Revenue] < threshold, "#D75B62", "#167C80")
+
+-- Optional 2-field Field Parameter; easier to create with Modeling > New parameter > Fields.
+-- If your Power BI version supports field parameters, use:
+Analysis Axis = {
+    ("Category", NAMEOF('DimProducts'[Category]), 0),
+    ("Region", NAMEOF('DimCustomers'[Region]), 1)
+}
+
+-- Key Influencers configuration:
+-- Analyze: 'FactSales'[High Rating Flag] -> Is 'High'
+-- Explain by: 'DimProducts'[Category], 'DimCustomers'[Region],
+--             'DimCustomers'[Customer Type], 'FactSales'[Payment Method]
+-- Do NOT interpret associative drivers as causal effects.
+
+-- Decomposition Tree configuration:
+-- Analyze: [Total Profit]
+-- Explain by (in this order): DimProducts[Category], DimCustomers[Region],
+--                             DimCustomers[Customer Type]
+
+-- Q&A suggested questions (field synonyms may need to be configured):
+-- "Which category has the highest total revenue?"
+-- "Average Satisfaction by Region"
+-- "Average Satisfaction for West"
+-- "Total Profit by Category"
+-- "Total Revenue by Product Name"
