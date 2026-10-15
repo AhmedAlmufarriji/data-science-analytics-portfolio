@@ -12,6 +12,7 @@ A curated collection of educational projects: hands-on source code, reproducible
 
 | Project | What you can verify |
 |---|---|
+| [Workforce Demand Forecasting Capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone) | Structural-break forecasting, expanding/rolling backtesting, classical models, LightGBM and uncertainty estimates |
 | [Medical Insurance Cost Prediction](01-machine-learning/medical-insurance-linear-regression) | 70/30 train-test split, regression evaluation and an executable notebook |
 | [Restaurant Tips EDA](02-data-analysis/eda-tips-analysis) | Six charts with univariate, bivariate and multivariate analysis |
 | [AdventureWorks Sales Model](05-business-intelligence/powerbi-adventureworks-sales) | Star-schema relationships, Power Query transformations and DAX measures |
