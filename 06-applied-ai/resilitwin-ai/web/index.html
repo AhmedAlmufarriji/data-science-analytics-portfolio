@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ResiliTwin AI · Supply Chain Decision Intelligence</title>
+  <meta name="description" content="An explainable AI supply-chain digital twin: forecasting, disruption stress tests, procurement optimization, and grounded evidence." />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="mark">R<span>↗</span></div><div><strong>ResiliTwin<span> AI</span></strong><small>Decision intelligence</small></div></div>
+      <div class="eyebrow">COMMAND CENTER</div>
+      <nav>
+        <a class="nav active" href="#overview"><span>◫</span> Overview</a>
+        <a class="nav" href="#forecast"><span>⌁</span> Forecast lab</a>
+        <a class="nav" href="#simulator"><span>⎇</span> Scenario simulator</a>
+        <a class="nav" href="#evidence"><span>▤</span> Evidence library</a>
+        <a class="nav" href="#governance"><span>◎</span> Model governance</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="pulse"><i></i> SIMULATED ENVIRONMENT</div><p>Scenario decisions are recommendations, never automated purchases.</p><span class="version">v1.0 · Python + ML + OR</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">SUPPLY CHAIN / RESILIENCE ENGINE</div><h1>Command <span>overview</span></h1></div><div class="top-actions"><span class="tag">SYNTHETIC DATA</span><span id="status" class="online"><i></i> Connecting</span></div></header>
+      <div class="main-content">
+        <section id="overview" class="hero">
+          <div><div class="eyebrow accent">PREDICT · STRESS TEST · OPTIMIZE</div><h2>Make the next move<br/><em>before disruption hits.</em></h2><p>One decision cockpit for demand intelligence, supplier resilience, cost-aware sourcing, and carbon trade-offs. Explore what-if scenarios in real time.</p><a class="button main-btn" href="#simulator">Run a disruption scenario <span>↗</span></a></div>
+          <div class="hero-art"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div><div class="core">RT<span>AI</span></div><div class="radar-dot one"></div><div class="radar-dot two"></div><div class="radar-dot three"></div><div class="radar-label label-one">FORECAST</div><div class="radar-label label-two">RISK</div><div class="radar-label label-three">DECIDE</div></div>
+        </section>
+        <div class="metric-grid">
+          <div class="metric"><div class="metric-label">PRODUCT FAMILIES <span>↗</span></div><strong id="kpi-products">—</strong><small>Across logistics portfolio</small></div>
+          <div class="metric"><div class="metric-label">APPROVED SUPPLIERS <span>↗</span></div><strong id="kpi-suppliers">—</strong><small>Constrained capacity network</small></div>
+          <div class="metric"><div class="metric-label">FORECAST WINDOW <span>⌁</span></div><strong>21 <i>days</i></strong><small>Recursive horizon</small></div>
+          <div class="metric"><div class="metric-label">MODEL WAPE <span>◎</span></div><strong id="kpi-wape">—</strong><small>Holdout, one-step evaluation</small></div>
+        </div>
+        <section id="forecast" class="panel forecast-panel">
+          <div class="section-head"><div><div class="eyebrow">01 / DEMAND INTELLIGENCE</div><h3>Forward demand outlook</h3><p>21-day forecasts with illustrative residual uncertainty bands.</p></div><label class="select-wrap">PRODUCT <select id="sku-select" aria-label="Choose product"></select></label></div>
+          <div class="chart-wrap"><div id="forecast-plot" aria-label="Forecast chart" role="img"></div><div class="chart-legend"><span><i class="legend-line"></i> Forecast mean</span><span><i class="legend-band"></i> Illustrative interval</span></div></div>
+          <div class="forecast-info"><div><small>21-DAY EXPECTED DEMAND</small><strong id="sku-total">—</strong></div><div><small>AVAILABLE ON HAND</small><strong id="sku-inventory">—</strong></div><div><small>PRODUCT DESCRIPTION</small><strong id="sku-name">—</strong></div></div>
+        </section>
+        <section id="simulator" class="section-simulation"><div class="section-head"><div><div class="eyebrow">02 / RESILIENCE LAB</div><h3>Disruption scenario simulator</h3><p>Compare a cheapest-first baseline with constrained, risk-aware procurement.</p></div><span class="tag">MONTE CARLO · 250 RUNS</span></div>
+          <div class="sim-grid"><div class="panel controls">
+            <div class="control-title">Scenario parameters <span>↗</span></div>
+            <label>Supplier outage <span class="muted">Optional</span></label><select id="outage"><option value="">No supplier outage</option></select>
+            <div class="control-row"><label for="duration">Outage duration</label><output id="duration-value">12 days</output></div><input id="duration" type="range" min="0" max="21" value="12" />
+            <div class="control-row"><label for="shock">Demand shock</label><output id="shock-value">+0%</output></div><input id="shock" type="range" min="-30" max="80" value="0" step="5" />
+            <div class="control-row"><label for="carbon">Carbon price</label><output id="carbon-value">$120 / tCO₂e</output></div><input id="carbon" type="range" min="0" max="600" value="120" step="20" />
+            <div class="control-row"><label for="risk">Risk aversion</label><output id="risk-value">1.5×</output></div><input id="risk" type="range" min="0" max="5" value="1.5" step="0.5" />
+            <div class="control-row"><label for="budget">Procurement budget</label><output id="budget-value">$260,000</output></div><input id="budget" type="range" min="100000" max="420000" value="260000" step="10000" />
+            <button id="run" class="button run-btn">Simulate & optimize <span>→</span></button><p class="subnote">Results are derived from synthetic assumptions and are not production forecasts.</p>
+          </div><div class="panel results"><div class="results-top"><div><div class="eyebrow">COUNTERFACTUAL OUTCOME</div><h4>Plan comparison</h4></div><span id="run-state" class="small-badge">NOT RUN</span></div>
+            <div class="compare-cols"><div><small>CHEAPEST-FIRST</small><div class="big-num" id="base-service">—</div><span class="description">Expected simulated service</span></div><div><small>RISK-AWARE OPTIMIZER</small><div class="big-num green" id="optimized-service">—</div><span class="description">Expected simulated service</span></div></div>
+            <div class="impact"><div><span>Service change</span><strong id="delta-service">—</strong></div><div><span>Purchase cost change</span><strong id="delta-cost">—</strong></div><div><span>CO₂e change</span><strong id="delta-carbon">—</strong></div><div><span>Probability of ≥90% service</span><strong id="reliability">—</strong></div></div>
+            <div class="decision-note" id="decision-note">Run a scenario to generate explainable procurement recommendations.</div>
+          </div></div>
+          <div class="panel allocation-panel"><div class="section-head"><div><div class="eyebrow">ACTIONABLE PLAN</div><h4>Recommended supplier allocation</h4></div><span class="text-hint">Fractional planning units · Human approval required</span></div><div class="table-scroll"><table><thead><tr><th>SKU</th><th>Supplier</th><th>Units</th><th>Lead</th><th>Estimated emissions</th></tr></thead><tbody id="allocation-list"><tr><td colspan="5" class="loading-text">Run a scenario to generate procurement allocations.</td></tr></tbody></table></div></div>
+        </section>
+        <section id="evidence" class="panel evidence-panel"><div class="section-head"><div><div class="eyebrow">03 / EVIDENCE LIBRARY</div><h3>Ask the operations playbook</h3><p>Transparent, document-grounded retrieval. Every result includes a source citation.</p></div><span class="tag">NO LLM API REQUIRED</span></div><div class="searchbar"><input id="query" placeholder="Try: How do we handle a supplier outage?" value="supplier outage backup capacity" aria-label="Search documents"/><button id="search" class="button">Find evidence →</button></div><div id="evidence-list" class="evidence-list"><div class="loading-text">Search operational guidance to see matching citations.</div></div></section>
+        <section id="governance" class="model-footer"><div><div class="eyebrow">04 / MODEL GOVERNANCE</div><h3>Built for explainability.<br/><span>Honest about uncertainty.</span></h3></div><div class="governance-grid"><div><strong>Time-aware evaluation</strong><p>Chronological holdout and explicit leakage safeguards.</p></div><div><strong>Visible objective function</strong><p>Cost, carbon and delay risk balanced under capacity constraints.</p></div><div><strong>Stress-tested uncertainty</strong><p>Supplier-level event draws and demand shocks; no guarantees.</p></div><div><strong>Human in the loop</strong><p>No orders executed; all recommended actions need approval.</p></div></div><a href="/docs" target="_blank" rel="noopener">Explore interactive API documentation ↗</a></section>
+        <footer>RESILITWIN AI <span>·</span> SYNTHETIC / REPRODUCIBLE / EDUCATIONAL <span>·</span> © 2026</footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

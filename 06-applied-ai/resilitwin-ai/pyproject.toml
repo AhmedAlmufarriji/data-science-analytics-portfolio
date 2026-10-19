@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resilitwin-ai"
+version = "1.0.0"
+description = "Reproducible supply-chain resilience digital twin with ML forecasting, stochastic disruption analysis, and risk-aware linear optimization"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Ahmed Almufarriji"}]
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "scikit-learn>=1.4,<2",
+  "scipy>=1.11,<2",
+  "fastapi>=0.110,<1",
+  "uvicorn>=0.27,<1",
+  "pydantic>=2,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+resilitwin = "resilitwin.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resilitwin*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
