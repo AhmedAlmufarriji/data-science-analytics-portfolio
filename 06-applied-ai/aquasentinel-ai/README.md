@@ -83,6 +83,8 @@ flowchart LR
     API --> UI
 ```
 
+**New to the code?** Read the [step-by-step learning guide](docs/LEARNING_GUIDE.md).
+
 Architecture and limitations: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Test and research methodology: [docs/MODEL_CARD.md](docs/MODEL_CARD.md). Optional future AWS integration (not implemented): [docs/AWS_ROADMAP.md](docs/AWS_ROADMAP.md).
 
 ## Design decisions
