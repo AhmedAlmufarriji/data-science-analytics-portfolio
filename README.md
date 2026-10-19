@@ -12,6 +12,7 @@ A curated collection of educational projects: hands-on source code, reproducible
 
 | Project | What you can verify |
 |---|---|
+| [AquaSentinel AI — Agentic Water Digital Twin](06-applied-ai/aquasentinel-ai) | Unsupervised leak detection, topology-based localization, demand forecasting, what-if simulation, FastAPI dashboard and an evidence-grounded investigation agent |
 | [ResiliTwin AI — Supply Chain Digital Twin](06-applied-ai/resilitwin-ai) | End-to-end ML demand forecasting, risk-aware supplier optimization, Monte Carlo disruption simulations, FastAPI dashboard, and cited evidence search |
 | [Workforce Demand Forecasting Capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone) | Structural-break forecasting, expanding/rolling backtesting, classical models, LightGBM and uncertainty estimates |
 | [Medical Insurance Cost Prediction](01-machine-learning/medical-insurance-linear-regression) | 70/30 train-test split, regression evaluation and an executable notebook |
@@ -49,6 +50,7 @@ For individual Python projects, install their local `requirements.txt` and run t
 | [MongoDB Blog System](04-databases/mongodb-blog-system) | MongoDB, mongosh, JavaScript | Create a MongoDB blog with users, embedded post comments, follows, plus updates and deletions. |
 | [AdventureWorks Sales Analytics (Power BI Companion)](05-business-intelligence/powerbi-adventureworks-sales) | Power BI, Power Query M, DAX, Python, HTML | Data modeling, ETL transformations, DAX KPIs, visualizations and an HTML dashboard for the supplied educational sales dataset. |
 | [Retail Sales and Customer Satisfaction Analytics](05-business-intelligence/powerbi-store-satisfaction) | Power BI, DAX, Power Query M, HTML | Model invoices, customers, products and feedback; analyze revenue, gross profit, satisfaction and potential drivers. |
+| [AquaSentinel AI — Agentic Water Digital Twin](06-applied-ai/aquasentinel-ai) | Python, scikit-learn, NetworkX, FastAPI, SQLite, SVG | Explainable graph intelligence, sequential ML forecasting, scenario simulation, agent orchestration and local evidence retrieval. |
 | [ResiliTwin AI — Supply Chain Resilience](06-applied-ai/resilitwin-ai) | Python, scikit-learn, SciPy LP, FastAPI, JavaScript, Monte Carlo | Reproducible end-to-end decision intelligence and explainable scenario optimization with synthetic data. |
 
 ## Technical coverage

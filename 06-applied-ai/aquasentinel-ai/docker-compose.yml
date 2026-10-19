@@ -1,0 +1,12 @@
+services:
+  aquasentinel:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      AQUASENTINEL_MEMORY_DB: /app/state/sessions.sqlite
+    volumes:
+      - sessions:/app/state
+    restart: unless-stopped
+volumes:
+  sessions:

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aquasentinel-ai"
+version = "1.0.0"
+description = "Explainable agentic water-network digital twin with leak localization, ML forecasts and evidence-grounded investigations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["agentic-ai", "digital-twin", "water", "machine-learning", "graph-analytics", "fastapi"]
+dependencies = [
+ "fastapi>=0.110,<1", "uvicorn>=0.29,<1", "numpy>=1.26,<3",
+ "pandas>=2.0,<3", "networkx>=3.1,<4", "scikit-learn>=1.4,<2",
+ "pydantic>=2.0,<3"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.6"]
+
+[project.scripts]
+aquasentinel-demo = "aquasentinel.demo:main"
+
+[tool.setuptools.packages.find]
+include = ["aquasentinel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
