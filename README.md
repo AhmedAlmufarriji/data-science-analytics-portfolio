@@ -49,8 +49,6 @@ For individual Python projects, install their local `requirements.txt` and run t
 | [MongoDB Blog System](04-databases/mongodb-blog-system) | MongoDB, mongosh, JavaScript | Create a MongoDB blog with users, embedded post comments, follows, plus updates and deletions. |
 | [AdventureWorks Sales Analytics (Power BI Companion)](05-business-intelligence/powerbi-adventureworks-sales) | Power BI, Power Query M, DAX, Python, HTML | Data modeling, ETL transformations, DAX KPIs, visualizations and an HTML dashboard for the supplied educational sales dataset. |
 | [Retail Sales and Customer Satisfaction Analytics](05-business-intelligence/powerbi-store-satisfaction) | Power BI, DAX, Power Query M, HTML | Model invoices, customers, products and feedback; analyze revenue, gross profit, satisfaction and potential drivers. |
-
-
 | [ResiliTwin AI — Supply Chain Resilience](06-applied-ai/resilitwin-ai) | Python, scikit-learn, SciPy LP, FastAPI, JavaScript, Monte Carlo | Reproducible end-to-end decision intelligence and explainable scenario optimization with synthetic data. |
 
 ## Technical coverage
