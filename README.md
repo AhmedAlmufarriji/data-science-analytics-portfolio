@@ -85,7 +85,7 @@ For individual Python projects, install their local `requirements.txt` and run t
 
 ## Repository guidelines
 
-[Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Data-sharing and privacy](DATA_SHARING.md)
+[Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Data-sharing and privacy](DATA_SHARING.md) · [Accessibility](ACCESSIBILITY.md) · [Support](SUPPORT.md)
 
 This public repository does not currently include a blanket reuse license; please review ownership and permissions before reusing code or documentation.
 
