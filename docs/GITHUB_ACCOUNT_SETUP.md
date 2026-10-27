@@ -1,48 +1,88 @@
-# GitHub account finishing checklist
+# GitHub account and portfolio finishing guide
 
-Three existing repositories are intentionally kept distinct:
+*Last reviewed: 27 October 2026*
 
-1. **data-science-analytics-portfolio** (public) — the main index of fourteen educational projects.
-2. **time-series-forecasting-capstone** (public) — flagship forecasting project, run in Google Colab.
-3. **Laps** (private) — introductory classification notebooks. An optional future rename to `ml-classification-labs` would improve discoverability, but keep visibility **private** unless you explicitly decide otherwise.
+## Current public presence
 
-## Profile details you can set manually
+| Repository | Visibility | Purpose |
+| --- | --- | --- |
+| [AhmedAlmufarriji](https://github.com/AhmedAlmufarriji/AhmedAlmufarriji) | Public | **Live GitHub profile README**, displayed at the top of the account |
+| [data-science-analytics-portfolio](https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio) | Public | Curated Python, machine learning, BI, SQL and applied-AI projects |
+| [time-series-forecasting-capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone) | Public | Documented SDAIA Academy forecasting team capstone |
+| Laps | Private | Introductory ML notebooks, intentionally not exposed on the public profile |
 
-- **Name:** Ahmed Nawaf Almufarriji
-- **Bio:** Data Science Graduate | Python, Machine Learning, SQL & Power BI | Forecasting and Data Analytics
-- **Website:** https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio
-- **Pronouns / location / workplace:** Your personal choice. Do not publish contact or employer information unless you wish to.
-- **Social links:** Include only verified professional accounts.
+There is **no need to create a profile repository**: the `AhmedAlmufarriji/README.md` profile README already exists and has been refreshed.
 
-## Recommended repository descriptions
+The main portfolio's project index currently documents **17 example/project entries**, including independent demos and grouped course projects.
 
-- **Portfolio:** Curated Python, machine learning, SQL, MongoDB and Power BI projects, including reproducible notebooks and analytical reports.
-- **Time-series capstone:** Workforce-demand forecasting under a structural break using SARIMAX, LightGBM and walk-forward validation.
-- **Private labs:** Educational notebooks exploring Naive Bayes, LDA and QDA classification.
+## Manual GitHub settings worth completing
 
-## GitHub topics (suggested)
+These profile and repository metadata fields are outside the available connected file-editing interface; complete them directly on GitHub.
 
-- Portfolio: `data-science`, `machine-learning`, `python`, `sql`, `power-bi`, `data-analysis`
-- Capstone: `time-series`, `forecasting`, `lightgbm`, `sarimax`, `backtesting`
-- Labs: `classification`, `naive-bayes`, `lda`, `qda`, `scikit-learn`
+### 1. Public profile metadata
 
-Set descriptions/topics in each repository's GitHub **About** section. These fields are not edited by the connected repository-content integration.
+Go to [GitHub public profile settings](https://github.com/settings/profile).
 
-## Pin repositories to your profile
+- **Name:** Ahmed Almufarriji
+- **Suggested bio (copy/paste):** `Data Science Graduate | Applied AI, Machine Learning, SQL & Data Analytics | Saudi Arabia`
+- **Website:** `https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio`
+- **Photo:** use an appropriate professional headshot, if desired
+- **Location, email, workplace and social links:** optional; publish only what you want visible publicly
+- **LinkedIn:** add only your verified profile URL
 
-Open your profile overview, choose **Customize your pins**, and select **time-series-forecasting-capstone** and **data-science-analytics-portfolio**.
+Avoid posting GPA, private role details, unnecessary personal information or unverified certifications.
 
-## Enable a public GitHub profile README
+### 2. Pinned repositories
 
-Create a **new public repository** named exactly `AhmedAlmufarriji` (same as your login), initialize it with a README, then paste the contents of [GITHUB_PROFILE_README_TEMPLATE.md](GITHUB_PROFILE_README_TEMPLATE.md) into its `README.md`. GitHub displays that README at the top of your profile.
+Open [your profile](https://github.com/AhmedAlmufarriji) and choose **Customize your pins**. Pin, in this order:
 
-You must initiate repository creation yourself. Do not change the private labs visibility as part of this setup.
+1. `data-science-analytics-portfolio` — broad evidence across disciplines
+2. `time-series-forecasting-capstone` — depth and reproducible forecasting
 
-## Integrity check
+The SANAD, AquaSentinel and ResiliTwin cases are directories within the portfolio repo, not independent pin-able repositories. They're linked prominently in the profile README.
 
-Review the Actions tab in each repository:
-- portfolio: automated Python regression, script and notebook checks;
-- capstone: static notebook integrity (not full model execution);
-- labs: notebook JSON/dataset schema verification (not training accuracy).
+### 3. Repository metadata
 
-Make sure source code and projects are documented before describing them as validated production systems.
+On each public repository's main page, use the **About** section to edit the description and topics.
+
+**Portfolio description**
+> A curated portfolio of Python, Machine Learning, SQL, Business Intelligence and Applied AI projects with runnable examples and technical documentation.
+
+Recommended topics: `data-science`, `machine-learning`, `python`, `sql`, `power-bi`, `data-analytics`, `agentic-ai`.
+
+**Forecasting description**
+> Time-series forecasting under a structural break using SARIMAX, LightGBM, walk-forward backtesting and uncertainty estimates.
+
+Recommended topics: `time-series`, `forecasting`, `lightgbm`, `sarimax`, `backtesting`, `python`.
+
+### 4. Licensing
+
+The portfolio mixes original work, educational assignments, academic-team results and third-party datasets. **Do not add MIT, Apache or another blanket license just to fill a Community Standards indicator.** First confirm ownership and reuse rights for each component.
+
+A public repository without a license is visible, but that does **not** automatically grant general reuse rights.
+
+### 5. Optional profile links
+
+Add a verified LinkedIn link, downloadable resume, and public project site **only** when those destinations exist and you want them public.
+
+## Already completed
+
+- [x] Public GitHub profile README
+- [x] Featured, accurately attributed projects
+- [x] Main portfolio navigation and project index
+- [x] Python GitHub Actions checks
+- [x] Contributing guidelines
+- [x] Security policy
+- [x] Community code of conduct
+- [x] Issue templates and pull-request template
+
+## Quality and publishing standards
+
+- Keep public datasets either synthetic or authorized for publication.
+- Clearly separate educational prototypes from live production systems.
+- Keep team contributions and project ownership attribution accurate.
+- State actual validation coverage; a passing static check is not the same as reproducing a model training run.
+- Keep private coursework and confidential assessment content private if distribution is restricted.
+- Review profile and project links after renaming, moving or archiving a repository.
+
+[Return to the portfolio](../README.md)
