@@ -8,6 +8,17 @@ A curated collection of educational projects: hands-on source code, reproducible
 
 > **Scope:** Educational assignments and prototypes; not production software or claims of professional client deployment. Raw customer-level sales exports have not been published.
 
+## Navigate by interest
+
+| I'm interested in… | Start with |
+| --- | --- |
+| **Applied AI and agent systems** | [AquaSentinel](06-applied-ai/aquasentinel-ai), [ResiliTwin](06-applied-ai/resilitwin-ai), [SANAD voice-agent case study](06-applied-ai/sanad-agent-engineering) |
+| **Machine learning and forecasting** | [Workforce forecasting capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone), [Medical insurance regression](01-machine-learning/medical-insurance-linear-regression) |
+| **Data analytics and BI** | [Restaurant tips EDA](02-data-analysis/eda-tips-analysis), [AdventureWorks analytics](05-business-intelligence/powerbi-adventureworks-sales) |
+| **SQL and database engineering** | [MySQL schemas and procedures](04-databases/mysql-electronic-library), [MongoDB data modeling](04-databases/mongodb-blog-system) |
+
+Each project documents its technology, data assumptions, and whether it represents a runnable demo, course exercise, or independent prototype.
+
 ## Start here — selected projects
 
 | Project | What you can verify |
@@ -71,5 +82,11 @@ For individual Python projects, install their local `requirements.txt` and run t
 - [Dataset and privacy guidance](DATA_SHARING.md) explains why customer-level source exports are omitted.
 - Some interactive HTML dashboards were developed separately from Power BI; they should not be presented as PBIX exports.
 - The learning projects use demonstration data and do not constitute production system certifications.
+
+## Repository guidelines
+
+[Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Data-sharing and privacy](DATA_SHARING.md)
+
+This public repository does not currently include a blanket reuse license; please review ownership and permissions before reusing code or documentation.
 
 [My GitHub profile](https://github.com/AhmedAlmufarriji)
