@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark"><title>سند | SANAD — Saudi Insurance Voice Agent</title>
+<meta name="description" content="SANAD — An Arabic, knowledge-grounded motor insurance voice-agent assessment demo">
+<style>
+:root{--bg:#07151a;--panel:#0c1e24;--panel2:#0e252a;--line:#244047;--soft:#93a8ad;--text:#edf6f2;--aqua:#5be0b4;--mint:#0caf86;--warn:#f7bb6b}
+*{box-sizing:border-box}html{min-height:100%;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,'Segoe UI',Arial,sans-serif;line-height:1.6}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--aqua);outline-offset:2px}a{color:var(--aqua);text-decoration:none}a:hover{text-decoration:underline}.shell{display:flex;min-height:100vh}.sidebar{flex:0 0 258px;background:#0a1b21;border-left:1px solid var(--line);padding:29px 22px;display:flex;flex-direction:column;gap:25px}.brand{display:flex;align-items:center;gap:13px}.logo,.agent-avatar{display:grid;place-items:center;background:linear-gradient(145deg,#31deb0,#08785f);color:#073229;font-size:25px;font-weight:bold;border-radius:15px;width:48px;height:48px;box-shadow:0 9px 30px #0bb78d25}.brandname{font-weight:800;font-size:23px;line-height:1.1;letter-spacing:-1px}.latin{font-size:10px;letter-spacing:1.4px;color:var(--aqua);margin-right:4px}.brand small,.panel-top small,.box-head small{font-size:10px;color:var(--soft);display:block;letter-spacing:.15px}.caps{font-size:10px;letter-spacing:1.5px;color:#779298;font-weight:bold}.navlink{display:flex;gap:12px;align-items:center;padding:13px 12px;border-radius:11px;color:#91aaa9;font-size:12px}.navlink.active{background:#163732;color:#d9fff0;border:1px solid #286257}.navlink>span:first-child{font-size:18px}.nav-end{margin-right:auto;font-size:9px;color:var(--aqua);letter-spacing:1px}.sidebar-section{margin-top:14px;display:grid;gap:17px}.spec{font-size:12px;color:#a7bdc0;display:flex;gap:10px;align-items:center}.dot{width:7px;height:7px;background:#469e85;border-radius:50%}.sidebar-footer{margin-top:auto;border:1px solid var(--line);background:#11262a;border-radius:14px;padding:16px}.sidebar-footer p{color:#a6b8bc;font-size:11px;line-height:1.9}.pill{display:inline-block;font-size:10px;font-weight:bold;letter-spacing:.5px;padding:4px 9px;border-radius:30px}.pill.amber{color:#ffc786;background:#3b3127;border:1px solid #75522a}.sepline{border-top:1px solid var(--line);margin:12px 0}.sidebar-footer small{font-size:9px;color:#779298}.main{flex:1;min-width:0;padding:0 35px 22px;background:radial-gradient(ellipse 800px 410px at 70% -10%,#0b3b354b,transparent),var(--bg)}.topbar{display:flex;justify-content:space-between;align-items:center;height:71px;border-bottom:1px solid #233e43}.breadcrumbs{font-size:10px;font-weight:800;letter-spacing:2px;color:#81b7a9;direction:ltr}.breadcrumbs span{color:#51716f;padding:0 7px}.header-actions{font-size:11px;color:#c1d2d3;display:flex;align-items:center;gap:9px;direction:ltr}.light,.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--aqua);box-shadow:0 0 11px #5be0b499}.divider-v{height:21px;border-left:1px solid #2d4549;margin:0 7px}.icon-round{font-size:22px;color:#9abbb4}.intro{padding:35px 0 24px;display:flex;align-items:end;justify-content:space-between;gap:20px}.eyebrow{font-size:10px;color:var(--aqua);font-weight:800;letter-spacing:2px;direction:ltr;text-align:right}h1{font-size:32px;line-height:1.35;letter-spacing:-1px;margin:7px 0;font-weight:800}.heading-punct{color:var(--aqua)}.intro p{font-size:12px;color:#9fb6b7;margin:0;max-width:710px}.intro-stats{display:flex;gap:30px;direction:ltr}.stat{text-align:center}.stat strong{display:block;font-size:24px;color:#defff0;line-height:1.2}.stat span{font-size:10px;color:#7f9ba2}.warning{display:flex;align-items:center;gap:12px;border:1px solid #766040;background:#28281c;border-radius:13px;padding:12px 17px;margin-bottom:20px}.warning-icon{font-size:16px;display:grid;place-items:center;color:#ffcf80;border:1px solid #a07b46;width:27px;height:27px;border-radius:50%;font-weight:bold;flex-shrink:0}.warning strong{color:#f8c887;font-size:12px}.warning p{margin:0;color:#bcb6a4;font-size:11px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:start}.panel{background:linear-gradient(145deg,#0e2327,#0b1d23);border:1px solid var(--line);border-radius:17px;box-shadow:0 15px 35px #020c0e35}.chat-panel{display:flex;flex-direction:column;min-height:620px;overflow:hidden}.panel-top{padding:19px 22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}.agent-avatar{width:37px;height:37px;border-radius:11px;font-size:19px;box-shadow:none}.panel-top strong{font-size:13px}.panel-top-right{margin-right:auto;display:flex;gap:8px;align-items:center;color:#93cbb5;font-size:11px}.outline-button{border:1px solid #315952;background:transparent;color:#b6e3d2;border-radius:9px;padding:7px 10px;font-size:10px;margin-right:8px}.outline-button:hover{background:#153630}.suggestions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:16px 20px;border-bottom:1px solid #1d373e}.suggestions .suggestion-label{color:#748f94;font-size:10px;margin-left:5px}.suggestions button{border:1px solid #31534e;background:#15342f;color:#c6eee0;border-radius:30px;font-size:10px;padding:7px 11px}.suggestions button:hover{background:#226354}.chat-log{flex:1;min-height:360px;max-height:490px;overflow-y:auto;padding:23px 21px 35px;background:radial-gradient(ellipse at 55% 25%,#11403616,transparent 75%)}.message{margin-bottom:21px;max-width:85%;animation:fade .2s ease-out}.message.bot{margin-left:auto}.message.user{margin-right:auto}.speaker{font-size:10px;color:#84a6a5;margin-bottom:6px}.bubble{background:#18322f;border:1px solid #2b5149;color:#e3f1ed;padding:13px 16px;border-radius:16px 16px 5px 16px;font-size:13px;line-height:1.95;white-space:pre-wrap}.message.user .bubble{background:#25413f;border-color:#335d57;border-radius:16px 16px 16px 5px}.message-foot{font-size:9px;color:#559f89;direction:ltr;text-align:right;margin-top:5px}.message.urgent .bubble{border-color:#886044;background:#3b2d25}.input-area{padding:14px 19px 16px;border-top:1px solid var(--line);background:#0d2125}.composer{display:flex;gap:9px;align-items:center;background:#112c30;border:1px solid #32534e;border-radius:11px;padding:6px 6px 6px 8px}.composer input{width:100%;min-width:0;outline:none;border:0;background:none;color:var(--text);font-size:12px;padding:10px}.composer input::placeholder{color:#72908e}.composer input:focus-visible{outline:none}.composer:focus-within{border-color:var(--aqua)}.mic{border:1px solid #30534f;background:#193e39;border-radius:9px;color:#dbfff1;padding:9px 12px}.mic.listening{background:#80452f;border-color:#ee875d;animation:pulse 1s ease-in-out infinite}.send{border:0;border-radius:9px;background:var(--aqua);color:#07392f;font-weight:800;font-size:11px;padding:10px 17px;white-space:nowrap}.send:hover{background:#9ffad8}.send:disabled{opacity:.5}.send span{padding-right:7px}.input-foot{display:flex;justify-content:space-between;color:#718e91;font-size:10px;padding:10px 4px 0}.toggle{display:flex;gap:6px;align-items:center}.toggle input{accent-color:var(--aqua)}.context-column{display:grid;gap:14px}.panel-padding{padding:18px}.box-head{display:flex;gap:10px;align-items:center;margin-bottom:17px}.box-head strong{font-size:13px}.square-icon{background:#19463c;border:1px solid #2b6858;border-radius:9px;color:#80e9c0;width:33px;height:33px;display:grid;place-items:center}.mini-kv{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #20383b;padding:9px 0;gap:12px;font-size:11px}.mini-kv span{color:#77979a}.mini-kv b{color:#d7e8e0;font-size:10px;text-align:left}.urgent-badge{font-size:11px;color:#ffc98d;background:#463321;border:1px solid #9d6036;border-radius:9px;padding:9px;text-align:center}.empty-state{border:1px dashed #335149;border-radius:10px;padding:19px 13px;text-align:center;color:#b6cfca;font-size:11px;background:#0e2426}.empty-state span{display:block;color:#708d8e;margin-top:6px;font-size:10px}.case-row{display:grid;grid-template-columns:90px 1fr;gap:9px;border-bottom:1px solid #1c383d;padding:8px 0;font-size:10px}.case-row dt{color:#829c9a}.case-row dd{margin:0;overflow-wrap:anywhere}.foot-note{font-size:9px;color:#678382;margin-top:12px}.sources a{display:block;font-size:10px;padding:9px 0;border-bottom:1px solid #1c3538;word-break:break-word;direction:ltr;text-align:left}.quiet{color:#79928c;font-size:11px}.little-card{background:linear-gradient(130deg,#0e3430,#0c252b);border:1px solid #255147;border-radius:14px;padding:18px}.little-card>div{color:#82c4ab;font-size:9px;letter-spacing:1.6px;direction:ltr;text-align:right;margin-bottom:14px}.little-card p{font-size:11px;color:#c7ddd4;margin:7px 0}.little-card p span{font-size:10px;color:#5adbaf;margin-left:10px}.page-footer{display:flex;justify-content:space-between;color:#6c898b;font-size:10px;direction:ltr;border-top:1px solid #203638;margin-top:25px;padding-top:16px}.teal{color:var(--aqua)}[hidden]{display:none!important}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{opacity:.5}}@media(max-width:1140px){.sidebar{flex-basis:220px}.main{padding-inline:20px}.workspace{grid-template-columns:minmax(0,1fr) 260px}.intro-stats{gap:14px}}@media(max-width:950px){.sidebar{display:none}.workspace{grid-template-columns:minmax(0,1fr)}.context-column{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{display:block}.intro-stats{justify-content:flex-start;gap:35px;margin-top:18px}.main{width:100%}}@media(max-width:560px){.main{padding:0 12px 15px}.topbar{height:59px}.header-actions .divider-v,.header-actions .icon-round{display:none}h1{font-size:26px}.intro{padding:21px 0}.context-column{display:grid;grid-template-columns:1fr}.panel-top{padding:12px}.panel-top-right{font-size:0}.panel-top-right .outline-button{font-size:10px}.chat-log{min-height:330px}.message{max-width:95%}.suggestions{padding:12px}.warning{align-items:flex-start}.page-footer{display:block}.page-footer span{display:block}.intro-stats{gap:22px}.input-foot{gap:15px}}
+
+
+/* Saudi voice quality controls: local browser voices only, no third-party API calls */
+.voice-studio{padding:14px 20px 13px;border-bottom:1px solid #27493f;background:linear-gradient(110deg,#12342c,#102b31)}
+.voice-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.voice-head strong{font-size:12px;color:#d6f8e6}.voice-head small{font-size:10px;color:#80b5aa}
+.voice-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.voice-controls label{font-size:11px;color:#b9dacd;display:flex;gap:7px;align-items:center}
+.voice-controls select{min-width:180px;max-width:320px;flex:1;background:#122b2e;border:1px solid #397065;color:#e0f6ef;border-radius:8px;padding:8px;font-size:11px;direction:ltr}
+.voice-controls input[type=range]{width:85px;accent-color:var(--aqua)}
+.voice-controls output{color:#ace8d1;font-size:11px;min-width:34px;direction:ltr;text-align:left}
+.voice-controls button{background:#19473c;border:1px solid #32695a;color:#defff1;border-radius:8px;padding:8px 11px;font-size:11px}
+.voice-controls button:disabled{opacity:.45;cursor:not-allowed}.voice-controls button:hover:not(:disabled){background:#275c4b}
+.voice-controls .stop-btn{background:#382e28;border-color:#705248}
+.voice-status{margin:9px 0 0;font-size:10px;color:#b2d2c7;line-height:1.7}
+.voice-status.warn{color:#f3bc81}
+@media(max-width:560px){.voice-controls select{min-width:100%;max-width:100%}.voice-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo" aria-hidden="true">س</span><div><div class="brandname">سند <span class="latin">SANAD</span></div><small>Motor Insurance AI · Assessment</small></div></div>
+    <div class="caps">AGENT ENGINEER · DEMONSTRATION</div>
+    <div class="navlink active"><span>◈</span><b>لوحة المحادثة</b><span class="nav-end">LIVE</span></div>
+    <div class="navlink"><span>▤</span><b>قاعدة المعرفة</b><span class="nav-end">7</span></div>
+    <div class="sidebar-section"><span class="caps">مواصفات المساعد</span>
+      <div class="spec"><span class="dot"></span><span>اللهجة السعودية المحايدة</span></div>
+      <div class="spec"><span class="dot"></span><span>إجابات مقيدة بالمصادر</span></div>
+      <div class="spec"><span class="dot"></span><span>مسار طوارئ مستقل</span></div>
+      <div class="spec"><span class="dot"></span><span>ملخص حادث منظم</span></div>
+    </div>
+    <div class="sidebar-footer"><span class="pill amber">بيئة تجريبية · DEMO</span>
+      <p>لا يوجد اتصال بشركة تأمين، ولا يتم إرسال بلاغات أو مطالبات فعلية.</p>
+      <div class="sepline"></div><small>Built-in reference KB · Standalone demo</small>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumbs">S A N A D <span> / </span> VOICE AGENT STUDIO</div><div class="header-actions"><span class="light"></span> <span>Standalone · No server required</span><span class="divider-v"></span><span class="icon-round">◎</span></div></header>
+    <section class="intro"><div><div class="eyebrow">SAUDI MOTOR INSURANCE · CUSTOMER EXPERIENCE</div><h1>مساعد التأمين الذكي<span class="heading-punct">.</span></h1><p>مساعد صوتي باللهجة السعودية. يفهم بلاغات الحوادث، يرشدك للمصادر الموثوقة، ويعرف متى يوقف ويحوّلك للمختص.</p></div><div class="intro-stats"><div class="stat"><strong>07</strong><span>موضوعات موثّقة</span></div><div class="stat"><strong>24/7</strong><span>تصميم الخدمة</span></div><div class="stat"><strong>AR</strong><span>Saudi neutral</span></div></div></section>
+    <div class="warning"><div class="warning-icon">!</div><div><strong>هذا نموذج توضيحي، وليس خدمة تأمين فعلية</strong><p>لا تدخل معلومات شخصية حقيقية. في الحالات الخطرة اتصل بالطوارئ فوراً: <b dir="ltr">911</b> أو <b dir="ltr">997</b>.</p></div></div>
+    <div class="workspace">
+      <section class="panel chat-panel" aria-label="محادثة الوكيل">
+        <div class="panel-top"><div class="agent-avatar">س</div><div><strong>سند — مساعد المطالبات</strong><small>Grounded Agent · Voice & Text</small></div><div class="panel-top-right"><span class="status-dot"></span><span>جاهز للمحادثة</span><button id="reset" class="outline-button" type="button">↻ محادثة جديدة</button></div></div>
+        <div class="suggestions"><span class="suggestion-label">جرّب سيناريو:</span><button data-prompt="توني سويت حادث" type="button">🚗 حادث جديد</button><button data-prompt="وش الأوراق المطلوبة للمطالبة؟" type="button">▤ مستندات المطالبة</button><button data-prompt="أبي أعرف حالة مطالبتي" type="button">◷ حالة المطالبة</button><button data-prompt="فيه شخص مصاب وما يتحرك" type="button">⚠ طوارئ</button></div>
+
+        <div class="voice-studio" aria-label="إعدادات الصوت السعودي">
+          <div class="voice-head"><strong>🎙 إعدادات الصوت السعودي</strong><small>اختر الصوت واسمع عينة قبل بدء المكالمة</small></div>
+          <div class="voice-controls">
+            <label for="voiceSelect">الصوت</label><select id="voiceSelect" aria-label="اختيار صوت عربي"><option value="">جاري فحص الأصوات...</option></select>
+            <label for="voiceRate">السرعة <input type="range" id="voiceRate" min="0.8" max="1.1" step="0.05" value="0.9" aria-label="سرعة النطق"><output id="voiceRateLabel">0.90×</output></label>
+            <button type="button" id="previewVoice">▶ جرّب الصوت</button>
+            <button type="button" id="stopVoice" class="stop-btn">■ إيقاف</button>
+          </div>
+          <p id="voiceStatus" class="voice-status" role="status">جاري البحث عن أصوات عربية في النظام...</p>
+        </div>
+        <div class="chat-log" id="messages" role="log" aria-live="polite"><div class="message bot"><div class="speaker">سند · المساعد الآلي</div><div class="bubble">حياك الله، معك سند، المساعد التجريبي لتأمين المركبات. كيف أقدر أخدمك اليوم؟</div><div class="message-foot">● OFFLINE READY • WELCOME</div></div></div>
+        <div class="input-area"><div class="composer"><input id="message" type="text" placeholder="اكتب سؤالك هنا... مثلاً: توني سويت حادث" maxlength="1500" aria-label="رسالتك" autocomplete="off"><button class="mic" type="button" id="mic" title="بدء/إيقاف التحدث" aria-label="التحدث للوكيل">🎙</button><button class="send" type="button" id="send" aria-label="إرسال">إرسال <span>↖</span></button></div><div class="input-foot"><span id="micStatus">الكتابة تعمل دون إنترنت؛ راجع النص المسموع قبل إرساله.</span><label class="toggle"><input type="checkbox" id="tts" checked><span>🔊 نطق الردود</span></label></div></div>
+      </section>
+      <aside class="context-column"><section class="panel panel-padding"><div class="box-head"><span class="square-icon">◉</span><div><strong>حالة الجلسة</strong><small>Live context extraction</small></div></div><div class="mini-kv"><span>نوع الاستفسار</span><b id="intent">ترحيب</b></div><div class="mini-kv"><span>سير المحادثة</span><b id="phase">جاهز</b></div><div class="mini-kv"><span>الخطوة التالية</span><b id="next">—</b></div><div id="urgentBadge" class="urgent-badge" hidden>⚠ يتطلب توجيهاً للطوارئ</div></section>
+      <section class="panel panel-padding"><div class="box-head"><span class="square-icon">▤</span><div><strong>ملخص البلاغ التجريبي</strong><small>Structured accident intake</small></div></div><div id="caseSummary" class="empty-state">لم تُجمع تفاصيل حادث بعد.<span>ابدأ سيناريو «حادث جديد» لتجربة سير العمل.</span></div><div class="foot-note">يُحفظ الملخص مؤقتاً في ذاكرة الصفحة فقط. يُمسح عند التحديث أو إعادة الضبط، ولا يُرسل لأي جهة.</div></section>
+      <section class="panel panel-padding sources"><div class="box-head"><span class="square-icon">↗</span><div><strong>مصادر الإجابة</strong><small>Audit trail · Official references</small></div></div><div id="sources"><p class="quiet">ستظهر المصادر المرجعية عند الإجابة.</p></div></section>
+      <div class="little-card"><div>CONVERSATION DESIGN PRINCIPLES</div><p><span>01</span> Safety before paperwork</p><p><span>02</span> Knowledge before claims</p><p><span>03</span> Verify before disclosing</p><p><span>04</span> Human when uncertain</p></div>
+      </aside>
+    </div>
+    <footer class="page-footer"><span>SANAD <span class="teal">/</span> Agent Engineer Assessment 2026</span><span>Independent assessment prototype · Not an insurance provider</span></footer>
+  </main>
+</div>
+<script>
+/* Standalone offline demo engine. Mimics the server contract, uses no network. */
+window.SANAD_OFFLINE = (() => {
+ const source={emergency:['https://my.gov.sa/en/emergency-contact'],accident:['https://najm.sa/report-accident/','https://my.gov.sa/en/emergency-contact'],documents:['https://www.ia.gov.sa/en/regulations-and-licenses/regulations','https://taqdeer.taqeem.gov.sa/en'],assessment:['https://taqdeer.taqeem.gov.sa/en','https://taqdeer.taqeem.gov.sa/en/vehicle-damage-assessment-center-services/'],complaints:['https://www.ia.gov.sa/en/help-and-supports/faqs','https://icare.ia.gov.sa/']};
+ const titles={emergency:'أرقام طوارئ السعودية',accident:'الإبلاغ عن الحوادث',documents:'مستندات المطالبة',assessment:'تقدير الأضرار',complaints:'الشكاوى',claim_status:'حالة المطالبة',branches:'الفروع'};
+ let phase='idle', accident={};
+ const norm=s=>String(s||'').trim().toLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه');
+ const match=(s,...words)=>words.some(w=>s.includes(norm(w)));
+ const no=s=>match(s,'ما فيه','مافي','ما في','مافيه','بدون إصابات','بدون اصابة','لا يوجد','ما احد','محد','لا الحمد','لا،','سليمين','كلنا بخير')||['لا','no','nope','الحمد لله لا','الحمدلله لا'].includes(s);
+ // Read safety meaning by clause: 'no injuries, but the car is on fire' is still an emergency.
+ const criticalTerms=['تولع','تحترق','تحترق السيارة','اشتعلت','حريق','نار','دخان','ينزف','انزف','نزيف','ما يتحرك','فاقد الوعي','محشور'];
+ const injuryTerms=['مصاب','إصابة','اصابات','اصابه','اصابات'];
+ function negatedTerm(s,w){
+   const variants=['ما فيه','مافيه','ما في','ولا فيه','ولا يوجد','بدون','لا يوجد','مو','مب','ما عندنا','ما عندي'];
+   const idx=s.indexOf(norm(w));if(idx<0)return false;
+   const prefix=s.slice(Math.max(0,idx-26),idx).replace(/[،.؛]/g,' ');
+   const clause=prefix.split(/(?:بس|لكن|ولكن|إنما)/).pop()||'';
+   return variants.some(n=>new RegExp('(?:^|\\s)'+n.replace(/ /g,'\\s*')+'\\s+(?:[^\\s]+\\s+){0,2}$').test(clause));
+ }
+ const positiveTerm=(s,terms)=>terms.some(w=>s.includes(norm(w))&&!negatedTerm(s,w));
+ const highRisk=s=>positiveTerm(s,criticalTerms)||positiveTerm(s,injuryTerms);
+ const yes=s=>highRisk(s)||(!no(s)&&(['اي','ايوه','نعم','yes','فيه'].includes(s)||match(s,'خطر','شخص مصاب')));
+
+ function pack(reply,topic,urgent=false,handoff=false,next=''){return {reply,topic,urgent,handoff,next_action:next,phase,case:{...accident},knowledge_title:titles[topic]||'المعرفة',sources:source[topic]||[]};}
+ function answer(raw){const t=norm(raw);if(!t)return pack('أسمعك، تفضل تكلم أو اكتب سؤالك.','claim_status');
+  if(highRisk(t)||(phase==='accident_safety'&&yes(t))){phase='emergency';accident.safety='إصابات أو خطر مبلّغ عنه';return pack('سلامتك وسلامة الجميع. إذا فيه إصابة أو خطر، اتصل بالطوارئ على 911، أو الإسعاف على 997 الحين. ابتعد عن مكان الخطر إذا تقدر تتحرك بأمان، واتبع تعليمات الطوارئ. موضوع التأمين نخليه بعد ما تطمئنون، ولا تحرّك المصاب إلا بتوجيه المختصين أو إذا فيه خطر مباشر.','emergency',true,true,'اتصل بالطوارئ الآن');}
+  if(match(t,'موظف','موظفه','حولني','حوليني','شخص حقيقي','مشرف','human','agent')){phase='idle';return pack('أبشر. التحويل لموظف مو متاح في هالتجربة. تقدر تتواصل مع شركة التأمين من الرقم المكتوب في وثيقتك أو من قنواتها الرسمية.','complaints',false,true);}
+  if(match(t,'otp','pin','رمز التحقق','كلمة المرور','الرقم السري'))return pack('عشان نحافظ على خصوصيتك، لا ترسل رمز التحقق أو كلمة المرور أو رقمك السري هنا.','claim_status');
+  if(phase==='accident_safety'){if(no(t)){accident.safety='لا إصابات مبلّغ عنها';phase='accident_reported';return pack('الحمد لله على السلامة. أهم شيء تكونون بمكان آمن. بلّغ نجم إذا كان الحادث من اختصاصها، أو الجهة المرورية المختصة. بسألك: بلّغت عن الحادث؟','accident',false,false,'تحقق من صدور بلاغ رسمي');}return pack('بس أتأكد من سلامتك أول: فيه أحد مصاب أو فيه خطر حولكم؟','emergency');}
+  if(phase==='accident_reported'){if(match(t,'لا','ما بلغت','لسه','ما بعد')){phase='idle';return pack('تمام، أول شيء بلّغ الجهة المختصة. إذا الحادث من اختصاص نجم، تقدر تبلغ من قنواتها الرسمية أو تتصل على 920000560. وإذا فيه خطر، اتصل بالطوارئ. للتوضيح: أنا ما قدمت بلاغ عنك.','accident',false,false,'بلّغ الجهة المختصة');}if(match(t,'نعم','اي','بلغت','عندي تقرير','تم')){accident.reported='تم البلاغ بحسب إفادة المتصل';phase='collect_city';return pack('تمام. خلّنا نرتب تفاصيل الحادث خطوة بخطوة. هذا ملخص للتجربة فقط، مو مطالبة مقدمة. في أي مدينة صار الحادث؟','accident');}return pack('بلّغت نجم أو المرور؟ تقدر تقول إيه أو لا.','accident');}
+  if(phase==='collect_city'){accident.city=raw.slice(0,80);phase='collect_date';return pack('طيب، متى صار الحادث تقريباً؟','accident');}
+  if(phase==='collect_date'){accident.when=raw.slice(0,100);phase='collect_report_ref';return pack('إذا عندك رقم تقرير الحادث من الجهة المختصة، وش الرقم؟ وإذا ما وصلك تقدر تقول: ما عندي رقم.','accident');}
+  if(phase==='collect_report_ref'){
+    if(match(t,'ما عندي','مو موجود','ما وصل','بدون رقم','لا يوجد')){accident.report_number='لم يُقدَّم';phase='collect_damage';return pack('تمام، نكمل بدون الرقم حالياً. وش الأضرار اللي صارت للسيارة؟ وصف بسيط يكفي.','accident');}
+    accident.report_number=raw.slice(0,70);phase='confirm_report_ref';return pack('سمعت رقم التقرير: '+accident.report_number+'. هل هو صحيح؟ قل نعم أو لا.','accident');
+  }
+  if(phase==='confirm_report_ref'){
+    if(no(t)){delete accident.report_number;phase='collect_report_ref';return pack('تمام، أعطني رقم التقرير مرة ثانية، أو قل ما عندي رقم.','accident');}
+    if(match(t,'نعم','اي','صح','صحيح','بالضبط','yes')){phase='collect_damage';return pack('ممتاز، ثبتّ الرقم في ملخص التجربة فقط. وش الأضرار اللي صارت للسيارة؟ وصف بسيط يكفي.','accident');}
+    return pack('عشان أتأكد ما أسجل الرقم غلط: صحيح أو لا؟','accident');
+  }
+  if(phase==='collect_damage'){accident.damage=raw.slice(0,200);phase='case_ready';return pack('تمام، رتبت لك ملخص الحادث على الشاشة. للتنبيه: ما قدمت بلاغ أو مطالبة فعلية. التقديم يكون عن طريق شركة التأمين وقنواتها المعتمدة.','documents');}
+  if(match(t,'توني','سويت حادث','صار لي حادث','انصدمت','صدمت','حادث الحين')){phase='accident_safety';accident={stage:'حادث جديد'};return pack('سلامتك، عساكم بخير. أول شيء خلّني أتأكد: فيه أحد مصاب أو فيه خطر بمكان الحادث الحين؟','emergency');}
+  if(match(t,'حالة مطالب','حاله مطالب','وين وصلت مطالب','رقم المطالب','متى تنزل الفلوس','claim status')){phase='idle';return pack('أبشر. بس هذي تجربة مو مرتبطة بنظام المطالبات، فما أقدر أشوف حالة مطالبتك أو موعد التعويض. تقدر تتأكد من تطبيق شركة التأمين أو تتواصل معهم مباشرة.','claim_status',false,true);}
+  if(match(t,'أقرب فرع','اقرب فرع','وين فرع','فروع','موقع الفرع'))return pack('أبشر. عشان ما أعطيك موقع غلط، ما عندي قائمة فروع مؤكدة لشركتك. أفضل شيء تشيك موقع شركة التأمين الرسمي.','branches',false,true);
+  if(match(t,'تقدير','تقييم الأضرار','تقييم الاضرار','مركز تقييم'))return pack('خدمة تقدير مختصة بتقييم أضرار السيارات. تقدر تشوف المراكز والمواعيد من موقع تقدير الرسمي. وخلّ ببالك: وقت التقييم غير وقت تسوية مطالبة التأمين.','assessment');
+  if(match(t,'الأوراق','الاوراق','المستندات','الوثائق','وش احتاج','documents'))return pack('أكيد. الأوراق تختلف حسب شركة التأمين ونوع المطالبة. قد يُطلب تقرير الحادث وتقييم الأضرار وبيانات السيارة، لكن تأكد من القائمة المطلوبة من شركتك.','documents');
+  if(match(t,'شكوى','اعتراض','رفضو','نزاع','اشكي','خلاف'))return pack('تقدر تبدأ بشكوى عند شركة التأمين نفسها. وإذا احتجت تصعّد، راجع قنوات هيئة التأمين الرسمية. أنا ما أقدر ألغي قرار الشركة أو أحكم في النزاع.','complaints',false,true);
+  if(match(t,'كم يوم','كم المدة','متى يخلص','متى تنتهي','كم تستغرق'))return pack('تقصد مدة تقدير الأضرار، أو مراجعة المطالبة، أو صرف التعويض؟ كل خطوة لها وقت مختلف، وما أبي أعطيك موعد مو مؤكد.','assessment');
+  if(match(t,'كيف أبلغ','كيف ابلغ','نجم','بلاغ حادث'))return pack('إذا فيه إصابة أو خطر، اتصل بالطوارئ أول. وإذا الوضع آمن وكان الحادث من اختصاص نجم، تقدر تبلغ عن طريق نجم أو تتصل على 920000560.','accident');
+  if(match(t,'أقدم مطالبة','اقدم مطالبه','ارفع مطالبه','كيف ارفع مطالب','التأمين يعوض'))return pack('جهّز تقرير الحادث والأوراق المطلوبة حسب وثيقتك، ثم قدم المطالبة من قنوات شركة التأمين الرسمية. للتوضيح، ما أقدر أرسل المطالبة من هالتجربة.','documents');
+  if(match(t,'السلام','هلا','مرحبا','اهلا','hello','hi'))return pack('وعليكم السلام، يا هلا فيك. معك سند، مساعد تجريبي لتأمين المركبات. وش أقدر أساعدك فيه؟','accident');
+  return pack('أبشر، أقدر أساعدك ببلاغ الحادث، وأوراق المطالبة، وتقدير الأضرار، أو الشكاوى. وإذا تحتاج معلومات خاصة بحسابك، الأفضل نرجع لشركة التأمين.','claim_status');
+ }
+ // Standalone mode: direct in-page engine. No server, API, fetch override or Internet required.
+ return {
+   chat: async (message) => answer(String(message || '').slice(0,1500)),
+   reset: () => { phase='idle'; accident={}; }
+ };
+})();
+
+</script>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const names = {welcome:'ترحيب', emergency:'طوارئ وسلامة', accident:'حادث وبلاغ', documents:'مطالبة ومستندات', assessment:'تقدير الأضرار',claim_status:'حالة مطالبة',branches:'الفروع',complaints:'الاعتراضات والشكاوى'};
+  const phases = {idle:'جاهز',accident_safety:'التحقق من السلامة',accident_reported:'التحقق من البلاغ',collect_city:'مدينة الحادث',collect_date:'توقيت الحادث',collect_report_ref:'رقم التقرير',confirm_report_ref:'تأكيد الرقم',collect_damage:'وصف الأضرار',case_ready:'الملخص جاهز',emergency:'حالة طارئة'};
+  const caseNames = {report_number:'رقم تقرير الحادث (غير مُتحقّق)',safety:'سلامة الأشخاص',stage:'مرحلة الحادث',reported:'البلاغ الرسمي',city:'المدينة',when:'التاريخ والوقت',damage:'وصف الضرر'};
+  const namesForSources = {'https://my.gov.sa/en/emergency-contact':'المنصة الوطنية | أرقام الطوارئ','https://najm.sa/report-accident/':'نجم | بلاغ حادث','https://taqdeer.taqeem.gov.sa/en':'تقدير | الموقع الرسمي','https://taqdeer.taqeem.gov.sa/en/vehicle-damage-assessment-center-services/':'تقدير | مراكز التقييم','https://taqdeer.taqeem.gov.sa/en/booking-appointment/':'تقدير | حجز موعد','https://www.ia.gov.sa/en/help-and-supports/faqs':'هيئة التأمين | الأسئلة الشائعة','https://www.ia.gov.sa/en/regulations-and-licenses/regulations':'هيئة التأمين | الأنظمة واللوائح','https://icare.ia.gov.sa/':'IA Care | الشكاوى'};
+  const linkAllowlist = new Set(Object.keys(namesForSources));
+  let busy = false, recognizing = false;
+  function append(who, text, meta, urgent) {
+    const outer = document.createElement('div'); outer.className = 'message ' + (who==='user'?'user':'bot') + (urgent?' urgent':'');
+    const speaker = document.createElement('div'); speaker.className='speaker'; speaker.textContent=who==='user'?'المتصل':'سند · المساعد الآلي';
+    const bubble = document.createElement('div'); bubble.className='bubble'; bubble.textContent=text;
+    outer.append(speaker,bubble);
+    if (meta) {let foot=document.createElement('div');foot.className='message-foot';foot.textContent=meta;outer.appendChild(foot);}
+    $('messages').appendChild(outer);$('messages').scrollTop=$('messages').scrollHeight;
+  }
+  function update(result){
+    $('intent').textContent=names[result.topic]||result.topic;
+    $('phase').textContent=phases[result.phase]||result.phase;
+    $('next').textContent=result.next_action||'—';
+    $('urgentBadge').hidden=!result.urgent;
+    const summary=$('caseSummary'); summary.replaceChildren();
+    const entries=Object.entries(result.case||{});
+    if(!entries.length){summary.className='empty-state';summary.textContent='لم تُجمع تفاصيل حادث بعد.';let span=document.createElement('span');span.textContent='ابدأ سيناريو «حادث جديد» لتجربة سير العمل.';summary.append(span);}
+    else{summary.className='';const dl=document.createElement('dl');dl.style.margin='0';for(const [k,v] of entries){const row=document.createElement('div');row.className='case-row';const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=caseNames[k]||k;dd.textContent=v;row.append(dt,dd);dl.appendChild(row);}summary.appendChild(dl);}
+    const sources=$('sources');sources.replaceChildren();const urls=(result.sources||[]).filter(u=>linkAllowlist.has(u));
+    if(!urls.length){const p=document.createElement('p');p.className='quiet';p.textContent='هذا الرد يوضح قيود النظام التجريبي؛ لا توجد بيانات شركة متصلة.';sources.appendChild(p);}
+    for(const url of urls){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='↗ '+namesForSources[url];sources.appendChild(a);}
+  }
+  // Browser TTS cannot guarantee a Saudi accent. Prefer Saudi voices and let users audition.
+  let arabicVoices=[], activeVoice=null, speechSequence=0;
+  const voiceSelect=$('voiceSelect'), voiceStatus=$('voiceStatus');
+  const speechEngine=('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window)?window.speechSynthesis:null;
+  const nativeSaudi= v => /^(ar[-_]sa)$/i.test(v.lang) || /saudi|naayf|nayef|nayf|نايف|سعود/i.test(v.name);
+  function voiceScore(v){const l=(v.lang||'').toLowerCase();return (l==='ar-sa'?300:0)+(nativeSaudi(v)?120:0)+(/natural|neural|online/i.test(v.name)?20:0)+(l==='ar'?6:0);}
+  function chosenVoice(){return arabicVoices.find(v=>v.voiceURI===voiceSelect.value) || null;}
+  function stopSpeech(){speechSequence++;if(speechEngine)speechEngine.cancel();}
+  function setVoiceStatus(message,warn=false){voiceStatus.textContent=message;voiceStatus.classList.toggle('warn',warn);}
+  function fillVoices(){
+    if(!speechEngine){voiceSelect.replaceChildren(new Option('النطق غير مدعوم',''));voiceSelect.disabled=true;$('tts').checked=false;$('tts').disabled=true;$('previewVoice').disabled=true;setVoiceStatus('المتصفح لا يدعم تحويل النص إلى صوت. الكتابة تعمل بشكل طبيعي.',true);return;}
+    const previous=voiceSelect.value;
+    arabicVoices=speechEngine.getVoices().filter(v=>/^ar($|[-_])/i.test(v.lang||'')).sort((a,b)=>voiceScore(b)-voiceScore(a));
+    voiceSelect.replaceChildren();
+    if(!arabicVoices.length){voiceSelect.add(new Option('لا يوجد صوت عربي مثبت',''));voiceSelect.disabled=true;$('previewVoice').disabled=true;$('tts').checked=false;setVoiceStatus('ما فيه صوت عربي متاح في المتصفح. ثبّت صوت عربي سعودي من إعدادات ويندوز، ثم أعد فتح الصفحة. لن أشغّل صوتاً إنجليزياً بديلاً.',true);return;}
+    voiceSelect.disabled=false;$('previewVoice').disabled=false;
+    for(const v of arabicVoices){const suffix=nativeSaudi(v)?' ★ سعودي':' · عربي غير سعودي';voiceSelect.add(new Option(`${v.name} (${v.lang})${suffix}`,v.voiceURI));}
+    if(arabicVoices.some(v=>v.voiceURI===previous))voiceSelect.value=previous;
+    else {const sa=arabicVoices.find(nativeSaudi);voiceSelect.value=sa?sa.voiceURI:arabicVoices[0].voiceURI;if(!sa)$('tts').checked=false;}
+    activeVoice=chosenVoice();
+    setVoiceStatus(nativeSaudi(activeVoice)?`الصوت المختار: ${activeVoice.name}. جرّبه وتأكد أنه يناسب اللهجة السعودية.`:'الصوت المتاح عربي لكنه ليس سعودياً مؤكداً. جرّب الصوت بنفسك أو ثبّت صوت عربي سعودي لتحسين اللهجة.',!nativeSaudi(activeVoice));
+  }
+  // Spoken forms change audio only; on-screen facts and numbers remain untouched.
+  const spokenDigits={'911':'تسعة واحد واحد','997':'تسعة تسعة سبعة','920000560':'تسعة اثنين صفر صفر صفر صفر خمسة ستة صفر','8001240551':'ثمانية صفر صفر واحد اثنين أربعة صفر خمسة خمسة واحد'};
+  function forSpeech(text){let t=String(text||'');t=t.replace(/\b(920000560|8001240551|911|997)\b/g,(_,n)=>spokenDigits[n]);return t.replace(/\bIA Care\b/gi,'هيئة التأمين').replace(/\b[A-Z]{2,}\b/g,'').replace(/نجم/g,'نَجْم').replace(/تقدير/g,'تَقْدِير').replace(/\s+/g,' ').trim();}
+  function speechChunks(text){const sentences=forSpeech(text).match(/[^.!؟،؛\n]+[.!؟،؛]?/g)||[];const chunks=[];for(let piece of sentences){piece=piece.trim();if(!piece)continue;if(piece.length<=175){chunks.push(piece);continue;}const words=piece.split(/\s+/);let buf='';for(const w of words){if(buf.length+w.length+1>150){if(buf)chunks.push(buf);buf='';}buf+=(buf?' ':'')+w;}if(buf)chunks.push(buf);}return chunks;}
+  function speak(text,{force=false}={}){
+    if(!speechEngine||(!force&&!$('tts').checked))return;
+    const voice=chosenVoice();
+    if(!voice){setVoiceStatus('اختر صوتاً عربياً أولاً.',true);return;}
+    stopSpeech();const token=speechSequence;
+    const chunks=speechChunks(text);let idx=0;
+    const next=()=>{if(token!==speechSequence||idx>=chunks.length)return;
+      const u=new SpeechSynthesisUtterance(chunks[idx++]);u.voice=voice;u.lang=voice.lang||'ar-SA';u.rate=Number($('voiceRate').value);u.pitch=1;
+      u.onend=()=>{if(token===speechSequence)next();};
+      u.onerror=e=>{if(token!==speechSequence||e.error==='canceled'||e.error==='interrupted')return;setVoiceStatus('تعذر تشغيل الصوت المحدد. جرّب صوتاً عربياً آخر.',true);};
+      speechEngine.speak(u);
+    };next();
+  }
+  $('voiceRate').addEventListener('input',()=>{$('voiceRateLabel').textContent=Number($('voiceRate').value).toFixed(2)+'×';});
+  voiceSelect.addEventListener('change',()=>{stopSpeech();activeVoice=chosenVoice();setVoiceStatus(nativeSaudi(activeVoice)?`اخترت ${activeVoice.name}. اسمع العينة للتأكد من جودة النطق.`:'هذا صوت عربي غير سعودي بالضرورة، وتختلف جودة النطق حسب الجهاز.',!nativeSaudi(activeVoice));});
+  $('previewVoice').addEventListener('click',()=>speak('حياك الله، معك سند. سلامتك، أول شيء خلّنا نتأكد إن الجميع بخير. كيف أقدر أساعدك؟',{force:true}));
+  $('stopVoice').addEventListener('click',stopSpeech);
+  $('tts').addEventListener('change',()=>{if(!$('tts').checked)stopSpeech();});
+  fillVoices();if(speechEngine){speechEngine.addEventListener('voiceschanged',fillVoices);setTimeout(fillVoices,500);setTimeout(fillVoices,1500);}
+
+  async function send(text){text=(text||'').trim();if(!text||busy)return;busy=true;$('send').disabled=true;$('message').value='';append('user',text,'CALLER');
+    try{
+      if (!window.SANAD_OFFLINE || typeof window.SANAD_OFFLINE.chat !== 'function') throw new Error('offline engine unavailable');
+      const data=await window.SANAD_OFFLINE.chat(text);
+      append('bot',data.reply,'● '+(data.urgent?'EMERGENCY':'REFERENCE GUIDANCE')+' • '+(data.knowledge_title||''),data.urgent);
+      update(data);speak(data.reply);
+    }
+    catch(e){
+      console.error('SANAD demo error:',e);
+      append('bot','تعذر تشغيل المحرك التجريبي في هذه الصفحة. نزّل الملف وافتحه مباشرة في Chrome أو Edge، ولا تفتحه داخل معاينة الملفات.','● LOCAL DEMO ERROR');
+    }
+    finally{busy=false;$('send').disabled=false;$('message').focus();}
+  }
+  $('send').addEventListener('click',()=>send($('message').value));$('message').addEventListener('keydown',e=>{if(e.key==='Enter')send($('message').value)});
+  document.querySelectorAll('[data-prompt]').forEach(button=>button.addEventListener('click',()=>send(button.dataset.prompt)));
+  $('reset').addEventListener('click',()=>{
+    stopSpeech();
+    window.SANAD_OFFLINE?.reset?.();
+    $('messages').replaceChildren();
+    append('bot','حياك الله، معك سند، المساعد التجريبي لتأمين المركبات. كيف أقدر أخدمك اليوم؟','● NEW DEMO SESSION');
+    update({topic:'welcome',phase:'idle',case:{},sources:[]});
+  });
+  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;const mic=$('mic');
+  if(!Recognition){mic.title='التعرف الصوتي غير متوفر في هذا المتصفح';$('micStatus').textContent='التعرف الصوتي غير متاح في هذا المتصفح. يمكنك استخدام الكتابة.';mic.disabled=true;}
+  else{const recog=new Recognition();recog.lang='ar-SA';recog.continuous=false;recog.interimResults=false;
+    recog.onresult=e=>{const t=e.results?.[0]?.[0]?.transcript||'';$('message').value=t;$('message').focus();$('micStatus').textContent='سمعت: «'+t+'» — راجع النص واضغط إرسال. التعرّف الصوتي قد يخطئ باللهجة السعودية.'};
+    recog.onstart=()=>{recognizing=true;mic.classList.add('listening');$('micStatus').textContent='أستمع الآن... تكلم بالعربية'};
+    recog.onerror=e=>{$('micStatus').textContent=(e.error==='not-allowed'?'اسمح للمتصفح باستخدام الميكروفون أو استخدم الكتابة.':e.error==='network'?'التعرف الصوتي قد يحتاج اتصال إنترنت. استخدم الكتابة بدلاً منه.':'تعذر التعرف على الصوت: '+e.error)};
+    recog.onend=()=>{recognizing=false;mic.classList.remove('listening');if($('micStatus').textContent.startsWith('أستمع'))$('micStatus').textContent='انتهى الاستماع'};
+    mic.addEventListener('click',()=>{if(recognizing)recog.stop();else{stopSpeech();try{recog.start()}catch(e){$('micStatus').textContent=e.message}}});}
+})();
+
+</script>
+</body>
+</html>
