@@ -12,7 +12,7 @@ A curated collection of educational projects: hands-on source code, reproducible
 
 | I'm interested in… | Start with |
 | --- | --- |
-| **Applied AI and agent systems** | [AquaSentinel](06-applied-ai/aquasentinel-ai), [ResiliTwin](06-applied-ai/resilitwin-ai), [SANAD voice-agent case study](06-applied-ai/sanad-agent-engineering) |
+| **Applied AI and agent systems** | [KASC Crowd Intelligence V2](https://github.com/AhmedAlmufarriji/KASC-Crowd-Intelligence-V2), [AquaSentinel](06-applied-ai/aquasentinel-ai), [ResiliTwin](06-applied-ai/resilitwin-ai), [SANAD voice-agent case study](06-applied-ai/sanad-agent-engineering) |
 | **Machine learning and forecasting** | [Workforce forecasting capstone](https://github.com/AhmedAlmufarriji/time-series-forecasting-capstone), [Medical insurance regression](01-machine-learning/medical-insurance-linear-regression) |
 | **Data analytics and BI** | [Restaurant tips EDA](02-data-analysis/eda-tips-analysis), [AdventureWorks analytics](05-business-intelligence/powerbi-adventureworks-sales) |
 | **SQL and database engineering** | [MySQL schemas and procedures](04-databases/mysql-electronic-library), [MongoDB data modeling](04-databases/mongodb-blog-system) |
@@ -23,6 +23,7 @@ Each project documents its technology, data assumptions, and whether it represen
 
 | Project | What you can verify |
 |---|---|
+| [KASC Crowd Intelligence V2 — Independent Prototype](https://github.com/AhmedAlmufarriji/KASC-Crowd-Intelligence-V2) | Synthetic event-level congestion forecasting, API-driven bilingual dashboard, tested Dijkstra routing, and computed staffing scenarios |
 | [AquaSentinel AI — Agentic Water Digital Twin](06-applied-ai/aquasentinel-ai) | Unsupervised leak detection, topology-based localization, demand forecasting, what-if simulation, FastAPI dashboard and an evidence-grounded investigation agent |
 | [SANAD — Saudi Arabic Voice Agent Engineering](06-applied-ai/sanad-agent-engineering) | Safety-first insurance conversation design, a scripted Arabic demo, prompt-only bank outage recovery, and three evidence-based call-quality reviews |
 | [ResiliTwin AI — Supply Chain Digital Twin](06-applied-ai/resilitwin-ai) | End-to-end ML demand forecasting, risk-aware supplier optimization, Monte Carlo disruption simulations, FastAPI dashboard, and cited evidence search |
